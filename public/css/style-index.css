@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+/*
+*
+*   GLOBAL OVERRIDE
+*
+*/
+:root {
+    --primary-hero-color: #5246f4;
+    --secondary-hero-color: #06042d;
+    --primary-footer-color: #5246f4;
+    --secondary-footer-color: #05031d;
+    --primary-content-color: #ffffff;
+    --primary-text-color: aliceblue;
+    --secondary-text-color: #313131;
+    --primary-text-link-color: #000000;
+    --secondary-text-link-color: #000000;
+}
+
+html,
+body {
+    background-color: #121212;
+    color: var(--primary-text-color);
+    font-family: 'Inconsolata', monospace;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline !important;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+/*
+*
+*   GENERAL
+*
+*/
+
+.content-section-start {
+    width: 100%;
+    padding: 100px 0 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(35deg, var(--primary-hero-color), var(--secondary-hero-color) 80%);
+}
+
+.content-section-end {
+    width: 100%;
+    padding: 0 0 100px;
+    background: linear-gradient(45deg, var(--primary-hero-color), var(--secondary-hero-color) 70%);
+}
+
+.main-content {
+    background-color: var(--primary-content-color);
+    height: 700px;
+}
+
+
+/*
+*
+*   WAVY
+*
+*/
+
+.waves {
+    display: block;
+    width: 100%;
+    height: 80px;
+    z-index: 5;
+    position: relative
+}
+
+.waves-inverted {
+    transform: rotateZ(180deg);
+}
+
+.wave-first use {
+    animation: move-forever 10s linear infinite;
+    animation-delay: 0s
+}
+
+.wave-second use {
+    animation: move-forever 7s linear infinite;
+    animation-delay: 0s
+}
+
+.wave-third use {
+    animation: move-forever 5s linear infinite;
+    animation-delay: 0s
+}
+
+
+/*
+*
+*   SECTIONS
+*
+*/
+
+
+section {
+    overflow: hidden
+}
+
+.section-bg {
+    background-color: var(--primary-content-color);
+}
+
+.section-title {
+    text-align: center;
+    padding: 40px 0 30px;
+}
+
+.section-title h2 {
+    color: var(--secondary-text-color);
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: var(--secondary-text-color);
+    bottom: 0;
+    left: calc(50% - 50px)
+}
+
+/*
+*
+*   INTRODUCTION
+*
+*/
+
+.container-introduction {
+    padding: 0 0 120px;
+}
+
+.container-introduction p {
+    margin-top: 25px;
+    line-height: 2;
+}
+
+.container-introduction h1 {
+    margin-top: 25px;
+}
+
+.container-profile img {
+    width: 25%;
+    border-radius: 100%;
+    display: block;
+}
+
+/*
+*
+*   ACADMEIC
+*
+*/
+
+#academic-section {
+    margin-top: 100px;
+}
+
+/*
+*
+*   PROJECT
+*
+*/
+
+#project-section {
+    margin-top: 100px;
+}
+
+/*
+*
+*   IMPORTANT
+*
+*/
+
+
+/*
+*
+*   FOOTER
+*
+*/
+
+footer {
+    font-size: 14px;
+    background: linear-gradient(28deg, var(--primary-footer-color) 20%, var(--secondary-footer-color));
+    background-size: cover;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-row-container{
+    max-width: 500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.footer-row div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/*NOTE: brightness(0) saturate(100%) forces black starting colour, as the colour pallete rotation is calculated from colour = #000000*/
+.footer-row img {
+    filter: brightness(0) saturate(100%) invert(87%) sepia(0%) saturate(32%) hue-rotate(158deg) brightness(95%) contrast(92%);
+}
+
+#mail:hover{
+    filter: brightness(0) saturate(100%) invert(8%) sepia(97%) saturate(7114%) hue-rotate(341deg) brightness(88%) contrast(101%);
+}
+
+#linkedin:hover{
+    filter: brightness(0) saturate(100%) invert(24%) sepia(43%) saturate(3593%) hue-rotate(197deg) brightness(104%) contrast(92%);
+}
+
+#gitlab:hover{
+    filter: brightness(0) saturate(100%) invert(54%) sepia(26%) saturate(4163%) hue-rotate(342deg) brightness(98%) contrast(101%);
+}
+
+#github:hover{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(105%) contrast(105%);
+}
+
+#sourcecode-hearth:hover {
+    color: #C00030;
+}
+
+
+/*
+*
+*   SCALING 
+*
+*/
+
+@media screen and (min-width: 601px) and (max-width: 992px)  {
+
+    .footer-row-container{
+        width: 400px;
+    }
+
+    .container-content {
+        width: 70%;
+    }
+}
+  
+@media screen and (max-width: 600px ) {
+    .footer-row-container{
+        width: 300px;
+    }
+
+    .container-content {
+        width: 80%;
+    }
+}
+
+/*
+*
+*   ANIMATIONS
+*
+*/
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px)
+    }
+
+    100% {
+        transform: translateY(-10px)
+    }
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate(85px, 0%)
+    }
+
+    100% {
+        transform: translate(-90px, 0%)
+    }
+}
+
+/*
+*
+*   SCROLLBAR
+*
+*/
+
+::-webkit-scrollbar {
+    width: 10px
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-hero-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-content-color);
+  
+}
