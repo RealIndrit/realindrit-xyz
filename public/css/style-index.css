@@ -6,15 +6,16 @@
 *
 */
 :root {
-    --primary-hero-color: #5246f4;
-    --secondary-hero-color: #06042d;
-    --primary-footer-color: #5246f4;
-    --secondary-footer-color: #05031d;
-    --primary-content-color: #ffffff;
+    /*#RRGGBBAA*/
+    --primary-hero-color: #6358f866;
+    --secondary-hero-color: #05031dee;
+    --primary-footer-color: #292069ff;
+    --secondary-footer-color: #07041Eff;
+    --primary-content-color: #ffffffff;
     --primary-text-color: aliceblue;
-    --secondary-text-color: #313131;
-    --primary-text-link-color: #000000;
-    --secondary-text-link-color: #000000;
+    --secondary-text-color: #313131ff;
+    --primary-text-link-color: #000000ff;
+    --secondary-text-link-color: #000000ff;
 }
 
 html,
@@ -39,20 +40,21 @@ a:hover {
 *
 */
 
-.content-section-start {
+.content-section-divider {
     width: 100%;
-    padding: 100px 0 0;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    background: linear-gradient(35deg, var(--primary-hero-color), var(--secondary-hero-color) 80%);
+    background-image: linear-gradient(45deg, var(--primary-hero-color), var(--secondary-hero-color) 70%), url(../assets/hero-backdrop.webp);
+}
+
+.content-section-start {
+    padding: 120px 0 0;
 }
 
 .content-section-end {
-    width: 100%;
-    padding: 0 0 100px;
-    background: linear-gradient(45deg, var(--primary-hero-color), var(--secondary-hero-color) 70%);
+    padding: 0 0 120px;
 }
 
 .main-content {
@@ -264,7 +266,13 @@ footer {
     .container-content {
         width: 80%;
     }
+
+    .content-section-divider {
+        background-attachment: scroll;
+
+    }
 }
+
 
 /*
 *
