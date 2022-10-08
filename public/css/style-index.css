@@ -7,15 +7,17 @@
 */
 :root {
     /*#RRGGBBAA*/
-    --primary-hero-color: #6358f866;
-    --secondary-hero-color: #05031dee;
-    --primary-footer-color: #292069ff;
-    --secondary-footer-color: #07041Eff;
-    --primary-content-color: #ffffffff;
-    --primary-text-color: aliceblue;
-    --secondary-text-color: #313131ff;
-    --primary-text-link-color: #000000ff;
-    --secondary-text-link-color: #000000ff;
+    --primary-hero-color:#6358f833;
+    --secondary-hero-color:#05031dee;
+    --primary-footer-color:#292069ff;
+    --secondary-footer-color:#07041Eff;
+    --primary-content-color:#eeecfa;
+    --primary-text-color:#f0f8ff;
+    --secondary-text-color:#313131ff;
+    --primary-text-link-color:#000000ff;
+    --secondary-text-link-color:#000000ff;
+    --primary-button-color:#292069ff;
+    --secondary-button-color:#07041Eff;
 }
 
 html,
@@ -188,7 +190,67 @@ section {
 *   IMPORTANT
 *
 */
+#important {
+    padding-bottom: 15px;
+}
 
+.important-container {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #1E1750;
+
+}
+
+.important-container img {
+    filter: brightness(0) saturate(100%) invert(95%) sepia(4%) saturate(1560%) hue-rotate(184deg) brightness(102%) contrast(101%);
+    height: 16px;
+    width: 16px;
+    padding: 10px 0 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.important-container p {
+    padding: 10px 0 10px;
+}
+
+/*
+*
+*   CONTACT
+*
+*/
+form {
+    padding: 0;
+    margin: 0;
+}
+
+.container-contact {
+    padding: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color:  var(--primary-button-color);
+    color: var(--primary-text-color);
+    cursor: pointer;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type=submit]:hover {
+    background-color: var(--secondary-button-color);
+}
 
 /*
 *
@@ -268,8 +330,11 @@ footer {
     }
 
     .content-section-divider {
-        background-attachment: scroll;
+        /*background-attachment: scroll;*/
+    }
 
+    .input[type=submit] {
+        padding: auto;
     }
 }
 

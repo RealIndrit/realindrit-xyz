@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/style-core.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="./css/style-index.css" media="screen" />
+        <script src="./js/color-manager.js" defer></script>
         <title>RealIndrit's Page</title>
         <meta name="description" content="This is my personal portfolio website, here you can read about projects I have worked on and more.">
 
@@ -51,7 +53,7 @@
                         </use>
                     </g>
                     <g class="wave-third">
-                        <use xlink:href="#wave-path" x="50" y="5" fill="#ffffff">
+                        <use xlink:href="#wave-path" x="50" y="5" fill="CSSVALUE">
                         </use>
                     </g>
                 </svg>
@@ -59,6 +61,7 @@
             <section class="main-content">
                 <div class="section-title">
                     <h2>UNDER DEVELOPMENT</h2>
+                    <h1 id="demo">The Document Object</h1>
                 </div>
 
                 <div class="container-introduction sc-text-center sc-col-lg-6 sc-col-sm-7 sc-col-xs-8 sc-pos-margin-center-horizontal" style="border-radius: 100%;">
@@ -80,12 +83,52 @@
                         </use>
                     </g>
                     <g class="wave-third">
-                        <use xlink:href="#wave-path" x="50" y="6" fill="#ffffff">
+                        <use xlink:href="#wave-path" x="50" y="6" fill="CSSVALUE">
                         </use>
                     </g>
                 </svg>
             </div>
         </main>
+
+
+         
+        <!-- CONTACT -->
+        <div id="important" class="content-section-divider">
+            <div class="important-container sc-flex sc-flex-col sc-col-lg-6 sc-col-sm-7 sc-col-xs-10 sc-pos-margin-center-horizontal sc-text-center">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.onlinewebfonts.com%2Fsvg%2Fimg_343679.png&f=1&nofb=1&ipt=cdee6b9fdb6beaf801afea616b28cdd679cf5dfa6943e6ab885a7700003eeed4&ipo=images" alt="">
+                <p>Have you found any problems, or have any questions? Feel free to <a href="mailto:johan.indrit.andersson@gmail.com">contact</a> me!</p>
+            </div>
+        </div>
+
+        <!--
+        <div class="content-section-divider container-contact">
+            <div class="sc-col-lg-6 sc-col-sm-7 sc-col-xs-10 sc-pos-margin-center-horizontal">
+                <form action="/action_page.php">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="fullname" placeholder="Enter Name" required>
+
+                    <label for="e-mail">E-Mail</label>
+                    <input type="text" id="e-mail" name="email" placeholder="Enter E-mail" required>
+                
+                    <label for="subject">Subject</label>
+                    
+                    <textarea id="subject" name="subject" placeholder="Type your message" style="height:200px" required></textarea>
+                
+                    <input type="submit" value="Submit">
+                </form>
+                <div id="error_message" style="width:100%; height:100%; display:none; ">
+                    <h4>
+                        Error
+                    </h4>
+                    Sorry there was an error sending your form. 
+                </div>
+                <div id="success_message" style="width:100%; height:100%; display:none; ">
+                    <h2>Success! Your Message was Sent Successfully.</h2>
+                </div>
+            </div>
+        </div>
+        -->
+
 
         <!-- FOOTER SECTION -->
         <footer>
@@ -93,12 +136,12 @@
                 <div class="footer-row sc-flex sc-flex-row sc-flex-nowrap">
                     <div id="github" class="sc-text-center sc-pos-margin-center-horizontal sc-hover-scale">
                         <a href="https://github.com/RealIndrit" target="_blank" rel="noopener">
-                            <img height="32" width="32" alt="Link to my GitHub" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" />
+                            <img height="32" width="32" alt="Link to my GitHub" src="https://www.svgrepo.com/show/341847/github.svg" />
                         </a>
                     </div>
                     <div id="gitlab" class="sc-text-center sc-pos-margin-center-horizontal sc-hover-scale">
                         <a href="https://gitlab.com/RealIndrit" target="_blank" rel="noopener">
-                            <img height="32" width="32" alt="Link to my GitLab" src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/gitlab.svg" />
+                            <img height="32" width="32" alt="Link to my GitLab" src="https://www.svgrepo.com/show/341849/gitlab.svg" />
                         </a>
                     </div>
                     <div id="linkedin" class="sc-text-center sc-pos-margin-center-horizontal sc-hover-scale">
