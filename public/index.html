@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/style-core.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="./css/style-index.css" media="screen" />
-        <script src="./js/color-manager.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <title>RealIndrit's Page</title>
         <meta name="description" content="This is my personal portfolio website, here you can read about projects I have worked on and more.">
 
@@ -61,7 +61,6 @@
             <section class="main-content">
                 <div class="section-title">
                     <h2>UNDER DEVELOPMENT</h2>
-                    <h1 id="demo">The Document Object</h1>
                 </div>
 
                 <div class="container-introduction sc-text-center sc-col-lg-6 sc-col-sm-7 sc-col-xs-8 sc-pos-margin-center-horizontal" style="border-radius: 100%;">
@@ -165,5 +164,11 @@
                 <a href="https://github.com/RealIndrit/realindrit-xyz" target="_blank" rel="noopener">Github</a>
             </div>
         </footer>
+        <script>
+            // Automatically color the waves with the content background colour
+            $(document).ready(function(){
+	            $('.wave-third').attr("fill", $(".main-content").css("--primary-content-color"));
+            });
+        </script>
     </body>
 </html>
