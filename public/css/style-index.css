@@ -11,6 +11,7 @@
     --secondary-hero-color:#05031dee;
     --primary-footer-color:#292069ff;
     --secondary-footer-color:#07041Eff;
+    --primary-important-color:#1E1750ff;
     --primary-content-color:#ffffffff;
     --primary-text-color:#f0f8ffff;
     --secondary-text-color:#313131ff;
@@ -196,7 +197,7 @@ section {
 .important-container {
     margin-bottom: 15px;
     border-radius: 5px;
-    background-color: #1E1750;
+    background-color: var(--primary-important-color);
 
 }
 
@@ -243,19 +244,7 @@ footer {
     filter: brightness(0) saturate(100%) invert(87%) sepia(0%) saturate(32%) hue-rotate(158deg) brightness(95%) contrast(92%);
 }
 
-#mail:hover{
-    filter: brightness(0) saturate(100%) invert(8%) sepia(97%) saturate(7114%) hue-rotate(341deg) brightness(88%) contrast(101%);
-}
-
-#linkedin:hover{
-    filter: brightness(0) saturate(100%) invert(24%) sepia(43%) saturate(3593%) hue-rotate(197deg) brightness(104%) contrast(92%);
-}
-
-#gitlab:hover{
-    filter: brightness(0) saturate(100%) invert(54%) sepia(26%) saturate(4163%) hue-rotate(342deg) brightness(98%) contrast(101%);
-}
-
-#github:hover{
+.footer-row img:hover {
     filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(105%) contrast(105%);
 }
 
