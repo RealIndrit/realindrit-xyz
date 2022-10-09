@@ -36,20 +36,19 @@ a:hover {
     font-weight: bold;
 }
 
-/*
-*
-*   GENERAL
-*
-*/
-
-.content-section-divider {
-    width: 100%;
+main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(45deg, var(--primary-hero-color), var(--secondary-hero-color) 70%), url(../assets/hero-backdrop.webp);
 }
+
+/*
+*
+*   GENERAL
+*
+*/
 
 .content-section-start {
     padding: 120px 0 0;
@@ -147,7 +146,7 @@ section {
 */
 
 .container-introduction {
-    padding: 0 0 120px;
+    padding: 120px 0 120px;
 }
 
 .container-introduction p {
@@ -211,45 +210,7 @@ section {
 }
 
 .important-container p {
-    padding: 10px 0 10px;
-}
-
-/*
-*
-*   CONTACT
-*
-*/
-form {
-    padding: 0;
-    margin: 0;
-}
-
-.container-contact {
-    padding: 20px;
-}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color:  var(--primary-button-color);
-    color: var(--primary-text-color);
-    cursor: pointer;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-}
-
-input[type=submit]:hover {
-    background-color: var(--secondary-button-color);
+    padding: 10px 5px 10px;
 }
 
 /*
@@ -310,13 +271,8 @@ footer {
 */
 
 @media screen and (min-width: 601px) and (max-width: 992px)  {
-
     .footer-row-container{
         width: 400px;
-    }
-
-    .container-content {
-        width: 70%;
     }
 }
   
@@ -325,16 +281,8 @@ footer {
         width: 300px;
     }
 
-    .container-content {
-        width: 80%;
-    }
-
-    .content-section-divider {
-        /*background-attachment: scroll;*/
-    }
-
-    .input[type=submit] {
-        padding: auto;
+    main {
+        background-attachment: scroll;
     }
 }
 
