@@ -4,31 +4,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="./css/style-core.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="./css/style-index.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="./css/style-portfolio.css" media="screen" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <title>RealIndrit's Page</title>
         <meta name="description" content="This is my personal portfolio website, here you can read about projects I have worked on and more.">
 
         <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="realindrit.xyz">
-        <meta property="og:title" content="RealIndrit's Page">
+        <meta property="og:url" content="https://realindrit.xyz">
+        <meta property="og:title" content="RealIndrit's Home">
         <meta property="og:description" content="This is my personal portfolio website, here you can read about projects I have worked on and more.">
         <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngfind.com%2Fpngs%2Fm%2F610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png&f=1&nofb=1&ipt=82d96bfd2688021a8792eb350660460a994a25d6abc75d63fc89e25bd76a6fa6&ipo=images">
 
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image">
         <meta property="twitter:domain" content="realindrit.xyz">
-        <meta property="twitter:url" content="realindrit.xyz">
-        <meta name="twitter:title" content="RealIndrit's Page">
+        <meta property="twitter:url" content="https://realindrit.xyz">
+        <meta name="twitter:title" content="RealIndrit's Home">
         <meta name="twitter:description" content="This is my personal portfolio website, here you can read about projects I have worked on and more.">
         <meta name="twitter:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngfind.com%2Fpngs%2Fm%2F610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png&f=1&nofb=1&ipt=82d96bfd2688021a8792eb350660460a994a25d6abc75d63fc89e25bd76a6fa6&ipo=images">
         <link rel="icon" type="image/x-icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngfind.com%2Fpngs%2Fm%2F610-6104451_image-placeholder-png-user-profile-placeholder-image-png.png&f=1&nofb=1&ipt=82d96bfd2688021a8792eb350660460a994a25d6abc75d63fc89e25bd76a6fa6&ipo=images">
     </head>
     <body>
         <header>
+            <!--
+                TODO: Add header
+            -->
         </header>
         <main>
-            <section class="container-introduction sc-text-center sc-col-lg-6 sc-col-sm-7 sc-col-xs-10 sc-pos-margin-center-horizontal sc-animation-slide-up">
+            <section id="introduction" class="container-introduction sc-text-center sc-col-lg-6 sc-col-sm-7 sc-col-xs-10 sc-pos-margin-center-horizontal sc-animation-fade-in">
                 <div class="container-profile">
                     <img loading="lazy" class="sc-pos-margin-center-horizontal" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pngarts.com%2Ffiles%2F10%2FDefault-Profile-Picture-PNG-Download-Image.png&f=1&nofb=1&ipt=7072ca4e4de6e13141447b4c5cc9118613569e60087363e3214ab516de95ac24&ipo=images" alt="Profile Picture"/>
                     <h1>Johan Andersson</h1>
@@ -57,15 +60,66 @@
                     </g>
                 </svg>
             </div>
-            <section class="main-content">
-                <div class="section-title">
-                    <h2>UNDER DEVELOPMENT</h2>
-                </div>
-
-                <div class="container-introduction sc-text-center sc-col-lg-6 sc-col-sm-7 sc-col-xs-8 sc-pos-margin-center-horizontal" style="border-radius: 100%;">
-                    <img src="https://giffiles.alphacoders.com/158/158674.gif" alt=""/>
-                </div>
-            </section>
+            <div class="main-content">
+                <section id="projects-section">
+                    <div class="section-title sc-text-center">
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="sc-flex sc-flex-row sc-flex-wrap sc-text-center sc-col-lg-8 sc-pos-margin-center-horizontal sc-flex-justify-content-center">
+                        <div id="campknut" class="x-container sc-col-lg-3 sc-col-sm-4 sc-col-xs-8">
+                            <a href="https://campknut.gg/" rel="noopener" target="_blank">
+                                <div class="x-container-img">
+                                    <img src="https://campknut.gg/_next/image?url=%2FCampKnutMerch.webp&w=3840&q=75" alt="campknut website preview">
+                                </div>
+                                <div class="x-container-description">
+                                    <h1>CampKnut</h1>
+                                    <p>Community made website for the CampKnut 2022 Twitch collabiration</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="copium" class="x-container sc-col-lg-3 sc-col-sm-4 sc-col-xs-8">
+                            <a href="https://copium.gg/" rel="noopener" target="_blank">
+                                <div class="x-container-img">
+                                    <img src="https://copium.gg/assets/copium.webp" alt="copium website preview">
+                                </div>
+                                <div class="x-container-description">
+                                    <h1>Copium</h1>
+                                    <p>Website for the Copium Valorant team in the 2021-2022 VCT qualifiers </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="personal" class="x-container sc-col-lg-3 sc-col-sm-4 sc-col-xs-8">
+                            <a href="https://realindrit.xyz/portfolio" rel="noopener" target="_blank">
+                                <div class="x-container-img">
+                                    <img src="./assets/hero-backdrop.webp" alt="personal website preview">
+                                </div>
+                                <div class="x-container-description">
+                                    <h1>Personal Website</h1>
+                                    <p>My personal website, I made to use as a portfolio website and more</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section id="academic-section">
+                    <div class="section-title sc-text-center">
+                        <h2>Academic</h2>
+                    </div>
+                    <div class="sc-flex sc-flex-row sc-flex-wrap sc-text-center sc-col-lg-8 sc-pos-margin-center-horizontal sc-flex-justify-content-center">
+                        <div id="certificate" class="x-container sc-col-lg-3 sc-col-sm-4 sc-col-xs-8">
+                            <a href="https://coursera.org/verify/LWU5ZLREQT4Z" rel="noopener" target="_blank">
+                                <div class="x-container-img">
+                                    <img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~LWU5ZLREQT4Z/CERTIFICATE_LANDING_PAGE~LWU5ZLREQT4Z.jpeg" alt="campknut website preview">
+                                </div>
+                                <div class="x-container-description">
+                                    <h1>Web Developer Certificate</h1>
+                                    <p>HTML5, CSS3 and Javascript developer course certificate</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
             <div class="content-section-end">
                 <svg class="waves waves-inverted" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
                     <defs>
@@ -120,7 +174,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sc-text-center">
+            <div id="sourcecode-reference" class="sc-text-center">
                 Made with 
                 <span>
                     <svg id="sourcecode-hearth" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">

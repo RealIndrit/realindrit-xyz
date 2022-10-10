@@ -12,13 +12,15 @@
     --primary-footer-color:#292069ff;
     --secondary-footer-color:#07041Eff;
     --primary-important-color:#1E1750ff;
-    --primary-content-color:#ffffffff;
+    --primary-content-color:#eae5f5ff;
+
+
     --primary-text-color:#f0f8ffff;
-    --secondary-text-color:#313131ff;
-    --primary-text-link-color:#000000ff;
-    --secondary-text-link-color:#000000ff;
-    --primary-button-color:#292069ff;
-    --secondary-button-color:#07041Eff;
+    --secondary-text-color:#6b6e70ff;
+    --tetriary-text-color:#2d2e30ff;
+
+    --primary-text-link-color:var(--pprimary-text-color);
+    --secondary-text-link-color:var(--pprimary-text-color);
 }
 
 html,
@@ -29,12 +31,13 @@ body {
 }
 
 a {
-    color: inherit;
+    color: var(--primary-text-link-color);
     text-decoration: underline !important;
 }
 
 a:hover {
     font-weight: bold;
+    color: var(--secondary-text-link-color);
 }
 
 main {
@@ -61,7 +64,6 @@ main {
 
 .main-content {
     background-color: var(--primary-content-color);
-    height: 700px;
 }
 
 
@@ -115,12 +117,11 @@ section {
 }
 
 .section-title {
-    text-align: center;
     padding: 40px 0 30px;
 }
 
 .section-title h2 {
-    color: var(--secondary-text-color);
+    color: var(--tetriary-text-color);
     font-size: 32px;
     font-weight: 700;
     text-transform: uppercase;
@@ -135,7 +136,7 @@ section {
     display: block;
     width: 100px;
     height: 3px;
-    background: var(--secondary-text-color);
+    background: var(--tetriary-text-color);
     bottom: 0;
     left: calc(50% - 50px)
 }
@@ -145,6 +146,10 @@ section {
 *   INTRODUCTION
 *
 */
+
+#introduction {
+    color: var(--pprimary-text-color)
+}
 
 .container-introduction {
     padding: 120px 0 120px;
@@ -172,7 +177,8 @@ section {
 */
 
 #academic-section {
-    margin-top: 100px;
+    color: var(--secondary-text-color);
+    padding-top: 100px;
 }
 
 /*
@@ -181,8 +187,50 @@ section {
 *
 */
 
-#project-section {
-    margin-top: 100px;
+#projects-section {
+    color: var(--secondary-text-color);
+}
+
+.x-container {
+    margin: 10px 10px 30px;
+    border-radius: 10px;
+}
+
+.x-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.x-container a{
+    text-decoration: none !important;
+}
+
+.x-container a:hover{
+    font-weight: normal;
+}
+
+.x-container-img {
+    border-radius: 10px 10px 0 0;
+    background-color: #ffffff;
+    height: 200px;
+    width: 100%;
+}
+
+.x-container-img img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 100%;
+}
+
+.x-container-description {
+    padding: 5px 2px 5px;
+    background-color: #121212;
+    border-radius: 0 0 10px 10px;
+}
+
+.x-container-description p{
+    padding: 10px;
 }
 
 /*
