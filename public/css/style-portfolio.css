@@ -48,12 +48,12 @@ main {
     background-image: linear-gradient(45deg, var(--primary-hero-color), var(--secondary-hero-color) 70%), url(../assets/hero-backdrop.webp);
 }
 
+
 /*
 *
 *   GENERAL
 *
 */
-
 .content-section-start {
     padding: 120px 0 0;
 }
@@ -72,7 +72,6 @@ main {
 *   WAVY
 *
 */
-
 .waves {
     display: block;
     width: 100%;
@@ -106,8 +105,6 @@ main {
 *   SECTIONS
 *
 */
-
-
 section {
     overflow: hidden
 }
@@ -141,12 +138,25 @@ section {
     left: calc(50% - 50px)
 }
 
+
+/*
+*
+*
+*
+*/
+.header-list {
+    width: 100%;
+}
+
+.header-contact {
+    float: right;
+}
+
 /*
 *
 *   INTRODUCTION
 *
 */
-
 #introduction {
     color: var(--pprimary-text-color)
 }
@@ -170,27 +180,12 @@ section {
     display: block;
 }
 
-/*
-*
-*   ACADMEIC
-*
-*/
-
-#academic-section {
-    color: var(--secondary-text-color);
-    padding-top: 100px;
-}
 
 /*
 *
-*   PROJECT
+*   LIST CONTAINER
 *
 */
-
-#projects-section {
-    color: var(--secondary-text-color);
-}
-
 .x-container {
     margin: 10px 10px 30px;
     border-radius: 10px;
@@ -224,14 +219,38 @@ section {
 }
 
 .x-container-description {
+    color: var(--primary-text-color);
     padding: 5px 2px 5px;
-    background-color: #121212;
+    background-color: var(--primary-important-color);
     border-radius: 0 0 10px 10px;
 }
 
 .x-container-description p{
     padding: 10px;
 }
+
+
+/*
+*
+*   ACADMEIC
+*
+*/
+#academic-section {
+    color: var(--secondary-text-color);
+    padding-top: 100px;
+}
+
+
+/*
+*
+*   PROJECT
+*
+*/
+
+#projects-section {
+    color: var(--secondary-text-color);
+}
+
 
 /*
 *
@@ -262,12 +281,12 @@ section {
     padding: 10px 5px 10px;
 }
 
+
 /*
 *
 *   FOOTER
 *
 */
-
 footer {
     font-size: 14px;
     background: linear-gradient(28deg, var(--primary-footer-color) 20%, var(--secondary-footer-color));
@@ -306,7 +325,6 @@ footer {
 *   SCALING 
 *
 */
-
 @media screen and (min-width: 601px) and (max-width: 992px)  {
     .footer-row-container{
         width: 400px;
@@ -329,7 +347,6 @@ footer {
 *   ANIMATIONS
 *
 */
-
 @keyframes up-down {
     0% {
         transform: translateY(10px)
@@ -350,12 +367,12 @@ footer {
     }
 }
 
+
 /*
 *
 *   SCROLLBAR
 *
 */
-
 ::-webkit-scrollbar {
     width: 10px
 }
