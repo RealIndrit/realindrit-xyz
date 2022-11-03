@@ -1,0 +1,24 @@
+{
+  "hosting": {
+      "public": "public",
+      "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+      ],
+      "rewrites": [
+          {
+              "source": "",
+              "destination": "/portfolio.html"
+          },
+          {
+              "source": "/portfolio",
+              "destination": "/portfolio.html"
+          },
+          {
+              "source": "/socials",
+              "destination": "/socials.html"
+          }
+      ]
+  }
+}
