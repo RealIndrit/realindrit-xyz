@@ -295,10 +295,11 @@ footer {
     padding-bottom: 5px;
 }
 
-.footer-row-container{
-    max-width: 500px;
+.footer-row {
     padding-top: 5px;
     padding-bottom: 5px;
+    align-items: center;
+    gap: 50px;
 }
 
 .footer-row div {
@@ -326,16 +327,9 @@ footer {
 *
 */
 @media screen and (min-width: 601px) and (max-width: 992px)  {
-    .footer-row-container{
-        width: 400px;
-    }
 }
   
 @media screen and (max-width: 600px ) {
-    .footer-row-container{
-        width: 300px;
-    }
-
     main {
         background-attachment: scroll;
     }
