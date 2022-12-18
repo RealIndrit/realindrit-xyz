@@ -221,6 +221,7 @@ section {
 .x-container-description {
     color: var(--primary-text-color);
     padding: 5px 2px 5px;
+    min-height: 80px;
     background-color: var(--primary-important-color);
     border-radius: 0 0 10px 10px;
 }
